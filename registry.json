@@ -2,6 +2,7 @@
   "revision": 1,
   "base": "https://raw.githubusercontent.com/undersquire/upr/main/pkg/",
   "packages": [
+    "zig-0.13.0.pkg.json",
     "zig-0.12.0.pkg.json"
   ]
 }

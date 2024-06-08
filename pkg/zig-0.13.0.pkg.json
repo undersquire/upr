@@ -1,0 +1,43 @@
+{
+  "id": {
+    "name": "zig",
+    "version": "0.13.0"
+  },
+  "license": {
+    "name": "MIT",
+    "url": "https://github.com/ziglang/zig/blob/master/LICENSE"
+  },
+  "source": "https://github.com/ziglang/zig/releases/download/0.13.0/zig-bootstrap-0.13.0.tar.xz",
+  "artifacts": [
+    {
+      "name": "zig",
+      "type": "binary"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "z3",
+      "version": "4.0.0"
+    },
+    {
+      "name": "zstd",
+      "version": "1.0.0"
+    }
+  ],
+  "build_dependencies": [
+    {
+      "name": "cmake",
+      "version": "3.15.0"
+    },
+    {
+      "name": "llvm",
+      "version": "18.0.0"
+    }
+  ],
+  "build": {
+    "mode": "dispatch",
+    "args": [
+      "zig build"
+    ]
+  }
+}
